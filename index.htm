@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Stops Selector</title>
+</head>
+<body>
+    <p>If you want to randomize a district, here's a result: <span id="distresult"></span></p>
+    <br/>
+    <p>
+        <label for="district0">Select District:</label>
+        <select id="district0">
+            <option value="" disabled selected>Choose a district</option>
+        </select>
+    </p>
+    <p>
+        <label for="district1">Select District:</label>
+        <select id="district1">
+            <option value="" disabled selected>Choose a district</option>
+        </select>
+    </p>
+    <p>
+        <label for="district2">Select District:</label>
+        <select id="district2" onchange="updateBusStops(2)">
+            <option value="" disabled selected>Choose a district</option>
+        </select>
+        
+        <label for="busstop2">Select Starting Bus Stop:</label>
+        <select id="busstop2" disabled>
+            <option value="" disabled selected>Choose a bus stop</option>
+        </select>
+    </p>
+    <p>
+        <label for="district3">Select District:</label>
+        <select id="district3" onchange="updateBusStops(3)">
+            <option value="" disabled selected>Choose a district</option>
+        </select>
+        
+        <label for="busstop3">Select Starting Bus Stop:</label>
+        <select id="busstop3" disabled>
+            <option value="" disabled selected>Choose a bus stop</option>
+        </select>
+    </p>
+    <p>
+        <label for="district4">Select District:</label>
+        <select id="district4" onchange="updateBusStops(4)">
+            <option value="" disabled selected>Choose a district</option>
+        </select>
+        
+        <label for="busstop4">Select Starting Bus Stop:</label>
+        <select id="busstop4" disabled>
+            <option value="" disabled selected>Choose a bus stop</option>
+        </select>
+    </p>
+    <p>
+        <label for="district5">Select District:</label>
+        <select id="district5" onchange="updateBusStops(5)">
+            <option value="" disabled selected>Choose a district</option>
+        </select>
+        
+        <label for="busstop5">Select Starting Bus Stop:</label>
+        <select id="busstop5" disabled>
+            <option value="" disabled selected>Choose a bus stop</option>
+        </select>
+    </p>
+
+    <button onclick="printrand()">Randomize targets</button>
+    <div id="randresult">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
