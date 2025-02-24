@@ -33,7 +33,7 @@ const districtSelect = [
 const busstopSelect = [
 	null,
 	null,
-	document.getElementById("busstop2"),
+	null,
 	document.getElementById("busstop3"),
 	document.getElementById("busstop4"),
 	document.getElementById("busstop5")
